@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "JetBrains Mono";
+}
+
+body{
+    
+    background-color: white;
+    /* position: relative; */
+    /* temp */
+}
+/* navbar */
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 3px #000000;
+    z-index: 999;
+}
+.nav__bar--1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+}
+.nav__flag--lang
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav__flag{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 25px;
+}
+.nav__flag:hover{
+    opacity: 0.5;
+}
+#nav__flag1
+{
+
+    background-image: url("..\\img\\nav-bar\\vietnam.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag2
+{
+
+    background-image: url("..\\img\\nav-bar\\england.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag3
+{
+
+    background-image: url("..\\img\\nav-bar\\china.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+.nav__logo{
+    background-image: url("..\\img\\nav-bar\\Group1.png");
+    background-size: 100%;
+    margin-top: 5px;
+    width: 200px;
+    height: 69px;
+}
+.nav__acc
+{
+    margin-top: 20px;
+}
+.__main--btn
+{
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+
+}
+.__main--btn:hover
+{
+    background-color: black;
+    color: white;
+}
+.nav__bar--2
+{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+.nav__list
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav__item
+{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav__item:hover
+{
+    color: black;
+    background-color: white;
+
+}
+/* navbar */
+
+.DanhMC {
+    width: 200px;
+    height: 50px;
+    left: 620px;
+    top: 144px;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.Support {
+    width: 70px;
+    height: 70px;
+    left: 1360px;
+    top: 856px;
+    position: absolute;
+}
+
+.Support .Ellipse4 {
+    width: 70px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    border-radius: 9999px;
+    border: 1px black solid;
+}
+
+.Support .Ellipse3 {
+    width: 70px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    border-radius: 9999px;
+    border: 1px black solid;
+}
+
+.Rectangle18 {
+    width: 395px;
+    height: 350px;
+    left: 103px;
+    top: 239px;
+    position: absolute;
+    background: #FEFFC8;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drinkList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#drinkList button {
+    margin-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+    display: flex; 
+    align-items: center; 
+}
+
+#drinkList li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.MenuHiNTI {
+    top : -80px;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+}
+
+.DrinkName {
+    top: -70px;
+    left: -80px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border: transparent;
+    background-color: transparent;
+    position: absolute;
+}
+
+.number {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    left: 250px; /* Đặt số ở phía bên phải của hộp chứa */
+}
+
+
+
+.Rectangle19 {
+    width: 815px;
+    height: 32px;
+    left: 523px;
+    top: 242px;
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+}
+
+.Searchicon {
+    width: 16px;
+    height: 15px;
+    margin-left: 10px; /* Đặt khoảng cách từ biểu tượng tìm kiếm đến biên trái của hộp chứa */
+    position: relative; /* Đặt position thành relative */
+}
+
+.Searchicon .Line3 {
+    width: 6.94px;
+    height: 0px;
+    left: 11.02px;
+    top: 10.17px;
+    position: absolute;
+    transform: rotate(44.16deg);
+    transform-origin: 0 0;
+    border: 1px black solid;
+}
+
+.Searchicon .Ellipse2 {
+    width: 13.02px;
+    height: 12.65px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 9999px;
+    border: 1px black solid;
+}
+
+.inputSearch {
+    position: relative; /* Đặt position thành relative */
+    flex: 1; /* Sử dụng flex để chiếm phần còn lại của .Rectangle19 */
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    color: #685E5E;
+    padding: 0%;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    box-sizing: border-box; 
+    background: transparent; 
+}
+
+.Drinkunit {
+    width: 185px;
+    height: 250px;
+    top: 30px;
+    position: absolute;
+}
+
+.Drinkbox {
+    width: 185px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.BoxTitle {
+    left: 15px;
+    top: 192px;
+    position: absolute;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.price {
+    left: 15px;
+    top: 213px;
+    position: absolute;
+    color: #D4B959;
+    font-size: 13px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+.Imageholder {
+    width: 155px;
+    height: 155px;
+    left: 15px;
+    top: 15px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.Plus {
+    width: 21px;
+    height: 21px;
+    left: 150px;
+    top: 213px;
+    position: absolute;
+    background-size: 100%;
+    background-color: transparent;
+    border: transparent;
+    background-image: url("..\\img\\drinklist\\plus.png");
+}
+
+#list1, #list2, #list3
+{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+.Drinkunit:hover .Drinkbox
+{
+    border-color: black;
+}
+
+.Plus:hover
+{
+    border: black;
+}
+

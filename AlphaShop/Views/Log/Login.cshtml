@@ -1,0 +1,39 @@
+@model AlphaShop.Models.LoginModel
+@{
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/login.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body>
+    <form asp-action="Login" class="container">
+        <div class="login-box">
+            <div class="logo"></div>
+            <h2>Đăng nhập</h2>
+            <div class="input-group">
+                <label asp-for="Name">Tài khoản </label>
+                <input asp-for="Name" type="text" class="input" required>
+            </div>
+            <div class="input-group">
+                <label asp-for="Password">Mật khẩu </label>
+                <input asp-for="Password" type="password" class="input" name="password" required>
+            </div>
+            <input type="submit" class="btn1" value="Đăng nhập">
+        </div>
+        <ul class="list">
+            <li class="list__item">
+                <a href="" class="list__item-link">Quên mật khẩu</a>
+            </li>
+            <li class="list__item">
+                <a asp-action="Register" class="list__item-link">Chưa có tài khoản? Đăng ký ngay</a>
+            </li>
+        </ul>
+        <h3>@ViewBag.LoginFail</h3>
+
+    </form>
+</body>
+

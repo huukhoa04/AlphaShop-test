@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/category.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body>
+    <!-- #navbar-->
+    <header class="nav">
+        <div class="nav__bar--1">
+            <ul class="nav__flag--lang">
+                <button class="nav__flag" id = "nav__flag1"></button>
+                <button class="nav__flag" id = "nav__flag2"></button>
+                <button class="nav__flag" id = "nav__flag3"></button>
+            </ul>
+            <div class="nav__logo"></div>
+            <ul class="nav__acc">
+                <button class="__main--btn" id = "nav__login">Đăng nhập</button>
+                <button class="__main--btn" id = "nav__sign-up">Đăng kí</button>
+            </ul>
+        </div>
+        <div class="nav__bar--2">
+            <ul class="nav__list">
+                <li class = "nav__item">Trang chủ</li>
+                <li class = "nav__item">Về chúng tôi</li>
+                <li class = "nav__item">Danh mục</li>
+                <li class = "nav__item">Tuyển dụng</li>
+                <li class = "nav__item">Sản phẩm mới</li>
+                <li class = "nav__item">Chi nhánh</li>
+            </ul>
+        </div>
+    </header>
+    <!-- #navbar-->
+    <!-- #done-->
+    <!-- #Danh muc-->
+    <div class="DanhMC">Danh mục</div>
+    <div class="Support">
+    <div class="Ellipse4"></div>
+    <img class="Ellipse3" src="https://via.placeholder.com/70x70" alt="Support Image">
+    </div>
+    <div class="Rectangle18">
+        <ul id="drinkList">
+            <li class="MenuHiNTI">Menu hiện tại</li>
+            <button class="DrinkName" id = "drink1">Trà sữa<div class = "number">6</div> </button>
+            <button class="DrinkName" id = "drink2">Trà<div class = "number">6</div></button>
+            <button class="DrinkName" id = "drink3">Cà phê<div class = "number">6</div></button>
+        </ul>        
+      </div>
+      
+      
+    <!-- #end Danh muc-->
+    <!--#Search Icon-->
+    
+    <div class="Rectangle19">
+        <div class="Searchicon">
+            <div class="Line3"></div>
+            <div class="Ellipse2"></div>
+        </div>
+        <textarea class="inputSearch" id="inputSearch" placeholder="Tìm kiếm sản phẩm..."></textarea>
+    </div>
+    
+    <div class = "categorybox">
+        <ul class="DrinkName" id = "list1" style="left: 500px; top: 310px; ">Trà sữa:
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+            
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Kem ly dâu sữa</div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder.png" />
+                <button class="Plus"></button>
+            </li>
+
+        </ul>
+        <script>
+            var drinkunits = document.querySelectorAll('#list1 .Drinkunit');
+            var unitsPerRow = 4;
+            var topPosition = 30;
+            var leftPosition = 30;
+        
+            for (var i = 0; i < drinkunits.length; i++) {
+                drinkunits[i].style.top = topPosition + 'px';
+                drinkunits[i].style.left = leftPosition + 'px';
+        
+                leftPosition += 200; // Giả sử mỗi Drinkunit có chiều rộng 185px
+        
+                if ((i + 1) % unitsPerRow === 0) {
+                    topPosition += 265; // Giả sử mỗi Drinkunit có chiều cao 250px
+                    leftPosition = 30;
+                }
+            }
+        </script>
+
+        <ul class="DrinkName" id = "list2" style="left: 500px; top: 919px; ">Trà:
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Ô Long Tuyết Sơn </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder3.png" />
+                <button class="Plus"></button>
+            </li>
+        </ul>
+        <script>
+            var drinkunits = document.querySelectorAll('#list2 .Drinkunit');
+            var unitsPerRow = 4;
+            var topPosition = 30;
+            var leftPosition = 30;
+        
+            for (var i = 0; i < drinkunits.length; i++) {
+                drinkunits[i].style.top = topPosition + 'px';
+                drinkunits[i].style.left = leftPosition + 'px';
+        
+                leftPosition += 200; // Giả sử mỗi Drinkunit có chiều rộng 185px
+        
+                if ((i + 1) % unitsPerRow === 0) {
+                    topPosition += 265; // Giả sử mỗi Drinkunit có chiều cao 250px
+                    leftPosition = 30;
+                }
+            }
+        </script>
+        <ul class="DrinkName" id = "list3" style="left: 500px; top: 1549px;">Cà phê:
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+            
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+
+            <li class = "Drinkunit">
+                <button class="Drinkbox"></button>
+                <div class="BoxTitle">Cà phê đen đá </div>
+                <div class = "price">25000$</div>
+                <img class="Imageholder" src="assets/img/drinklist/image-holder2.png" />
+                <button class="Plus"></button>
+            </li>
+            
+
+        </ul>
+        <script>
+            var drinkunits = document.querySelectorAll('#list3 .Drinkunit');
+            var unitsPerRow = 4;
+            var topPosition = 30;
+            var leftPosition = 30;
+        
+            for (var i = 0; i < drinkunits.length; i++) {
+                drinkunits[i].style.top = topPosition + 'px';
+                drinkunits[i].style.left = leftPosition + 'px';
+        
+                leftPosition += 200; 
+        
+                if ((i + 1) % unitsPerRow === 0) {
+                    topPosition += 265; 
+                    leftPosition = 30;
+                }
+            }
+        </script>
+    </div>
+    <script>
+        var drinkUnits = document.querySelectorAll('.Drinkunit');
+
+        var traSua = document.getElementById('drink1');
+        var tra = document.getElementById('drink2');
+        var caPhe = document.getElementById('drink3');
+        var danhMuc = document.querySelector('.DanhMC');
+
+        var danhMucPosition = danhMuc.offsetTop;
+
+        var list1Position = document.getElementById('list1').offsetTop;
+        var list2Position = document.getElementById('list2').offsetTop;
+        var list3Position = document.getElementById('list3').offsetTop;
+
+        var scrollToTraSua = list1Position - danhMucPosition;
+        var scrollToTra = list2Position - danhMucPosition;
+        var scrollToCaPhe = list3Position - danhMucPosition;
+
+        traSua.addEventListener('click', function() {
+            window.scrollTo({ top: scrollToTraSua, behavior: 'smooth' });
+        });
+
+        tra.addEventListener('click', function() {
+            window.scrollTo({ top: scrollToTra, behavior: 'smooth' });
+        });
+
+        caPhe.addEventListener('click', function() {
+            window.scrollTo({ top: scrollToCaPhe, behavior: 'smooth' });
+        });
+
+        document.getElementById('inputSearch').addEventListener('input', function(event) {
+        var searchString = event.target.value.toLowerCase(); // Chuyển đổi chuỗi nhập liệu thành chữ thường
+
+        // Duyệt qua từng drink unit để kiểm tra xem có chứa chuỗi tìm kiếm hay không
+        drinkUnits.forEach(function(drinkUnit) {
+            var title = drinkUnit.querySelector('.BoxTitle').textContent.toLowerCase(); // Lấy nội dung tiêu đề của drink unit
+
+            // Nếu tiêu đề của drink unit không chứa chuỗi tìm kiếm, ẩn nó đi, ngược lại hiển thị lại
+            if (title.includes(searchString)) {
+                drinkUnit.style.display = 'block'; // Hiển thị drink unit
+            } else {
+                drinkUnit.style.display = 'none'; // Ẩn drink unit
+            }
+            });
+        });
+
+    </script>
+    </div>
+    <!--#end Search icon-->
+    
+</div>
+
+
+
+
+</body>

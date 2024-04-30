@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/orderpage.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body>
+    <!-- #navbar-->
+    <header class="nav">
+        <div class="nav__bar--1">
+            <ul class="nav__flag--lang">
+                <button class="nav__flag" id = "nav__flag1"></button>
+                <button class="nav__flag" id = "nav__flag2"></button>
+                <button class="nav__flag" id = "nav__flag3"></button>
+            </ul>
+            <div class="nav__logo"></div>
+            <a href = "url" class = "accountlink">Xin chào, Nguyễn Hữu Khoa</a>
+        </div>
+    </header>
+    <div class="CustomerInfoBox">
+        <div class="CustomerRect"></div>
+        <div class="InfoText" id = "CustomerInfo">Thông tin giao hàng</div>
+        <div class="InfoText" id = "Name">Tên người nhận: Nguyễn Hữu Khoa</div>
+        <div class="Line" id = "Line1"></div>
+        <div class="Line" id = "Line2"></div>
+        <div class="Line" id = "Line3"></div>
+        <div class="InfoText" id = "Phone">Số điện thoại: 0338104272</div>
+        <div class="InfoText" id = "Address">Giao đến: ?????</div>
+        <div class="InfoText" id = "GhiChu">Ghi chú</div>
+        <div class="GhiChuBox">
+            <textarea class="inputGhichu" id="inputGhichu" placeholder="Nhập ghi chú tại đây (vd: thêm đường,...)"></textarea>
+        </div>
+        <div class="icon" id = "icon1"></div>
+        <div class="icon" id = "icon2"></div>
+        <div class="icon" id = "icon3"></div>
+    </div>
+
+    <div class="OrderInfoBox">
+        <div class="OrderRect" ></div>
+        <div class="InfoText" id = "OrderInfo">Thông tin đơn hàng</div>
+        <div class="Line" id = "Line4"></div>
+        <ul class = "OrderList" id = "OrderList">
+            <li class="OrderItem">
+                <div class="Itembox"></div>
+                <div class="DrinkImg" id = "DrinkImg"></div>
+                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
+                <div class="Price">25000$ x1 = 25000$</div>
+                <div class="Size">Size L</div>
+            </li>
+
+            <li class="OrderItem">
+                <div class="Itembox"></div>
+                <div class="DrinkImg" id = "DrinkImg"></div>
+                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
+                <div class="Price">25000$ x1 = 25000$</div>
+                <div class="Size">Size L</div>
+            </li>
+
+            <li class="OrderItem">
+                <div class="Itembox"></div>
+                <div class="DrinkImg" id = "DrinkImg"></div>
+                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
+                <div class="Price">25000$ x1 = 25000$</div>
+                <div class="Size">Size L</div>
+            </li>
+
+            <li class="OrderItem">
+                <div class="Itembox"></div>
+                <div class="DrinkImg" id = "DrinkImg"></div>
+                <div class="InfoText" id = "DrinkName">Kem ly dâu sữa</div>
+                <div class="Price">25000$ x1 = 25000$</div>
+                <div class="Size">Size L</div>
+            </li>
+
+            <li class = "Line" id = "Line5"></li>
+
+            <li class="InfoText" id = "Soluong">Số lượng: x cốc </li>
+            <li class="InfoText" id = "TotalDrink">Tổng:    </li>
+            <li class="InfoText" id = "TransportCost" >Phí vận chuyển:</li>
+            <li class="InfoText" id = "Total">Tổng cộng:</li>
+            <li class = "Line" id = "Line6"></li>
+            <li class = "xxxxx" id = "TotalDrinkPrice">xxxxxx$</li>
+            <li class = "xxxxx" id = "TransportPrice">xxxxxx$</li>
+            <li class = "xxxxx" id = "TotalPrice">xxxxxx$</li>
+
+            <li class="OrderBox">
+                <div class="Rectbackground"></div>
+                <button class="Btn">Đặt hàng</button>
+            </li>
+        </ul>
+        <script>
+            var drinkunits = document.querySelectorAll('#OrderList .OrderItem');
+            var unitsPerColumn = 100; 
+            var itemHeight = 100; 
+            var topPosition = 0;
+            var currentColumn = 0;
+
+            for (var i = 0; i < drinkunits.length; i++) {
+                drinkunits[i].style.top = topPosition + 'px';
+
+                currentColumn++;
+                if (currentColumn === unitsPerColumn) {
+                    topPosition += itemHeight;
+                    currentColumn = 0;
+                }
+            }
+
+            window.onload = function() {
+            var itemHeight = 100; // Chiều cao của mỗi mục OrderItem
+            var topPosition = 0;
+
+            // Tính toán chiều cao của OrderRect dựa trên số lượng OrderItem
+            var orderRectHeight = drinkunits.length * itemHeight + 300;
+
+            // Thiết lập chiều cao cho OrderRect
+            var orderRect = document.querySelector('.OrderRect');
+            orderRect.style.height = orderRectHeight + 'px';
+            };
+        </script>
+    </div>
+
+    <div class="PaymentBox">
+        <div class="PaymentRect"></div>
+        <div class="InfoText" id = "PaymentInfo">Phương thức thanh toán</div>
+        <button class="momoImg" id = "momoImg"></button>
+        <button class="codImg" id = "codImg"></button>
+        <div class="InfoText" id = "MomoText">Momo</div>
+        <div class="InfoText" id = "CodText">Thanh toán khi nhận hàng</div>
+    </div>
+
+</body>

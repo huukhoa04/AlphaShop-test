@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "JetBrains Mono";
+}
+
+body{
+    
+    background-color: white;
+    /* position: relative; */
+    /* temp */
+}
+/* navbar */
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 3px #000000;
+    z-index: 999;
+}
+.nav__bar--1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+}
+.nav__flag--lang
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav__flag{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 25px;
+}
+.nav__flag:hover{
+    opacity: 0.5;
+}
+#nav__flag1
+{
+
+    background-image: url("..\\img\\nav-bar\\vietnam.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag2
+{
+
+    background-image: url("..\\img\\nav-bar\\england.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag3
+{
+
+    background-image: url("..\\img\\nav-bar\\china.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+.nav__logo{
+    background-image: url("..\\img\\nav-bar\\Group1.png");
+    background-size: 100%;
+    margin-top: 5px;
+    width: 200px;
+    height: 69px;
+}
+.nav__acc
+{
+    margin-top: 20px;
+}
+.__main--btn
+{
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+
+}
+.__main--btn:hover
+{
+    background-color: black;
+    color: white;
+}
+.nav__bar--2
+{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+.nav__list
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav__item
+{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav__item:hover
+{
+    color: black;
+    background-color: white;
+
+}
+.Userpage{
+    width: 1440px; 
+    height: 1200px; 
+    position: relative; 
+    margin: 0 auto;
+    background: white;
+}
+.logo{
+    width: 200px; 
+    height: 200px; 
+    left: 620px; 
+    top: 221px; 
+    position: absolute; 
+    border-radius: 50%; 
+    border: 2px black solid;
+}
+.Uinfor{
+    left: 480px; 
+    top: 144px; 
+    position: absolute; 
+    color: black; 
+    font-size: 40px; 
+    font-weight: 700;
+}
+.Rec{
+    width: 1280px; 
+    height: 83px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: white; 
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.icon {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .User{
+    width: 1280px; 
+    height: 83px; 
+    left: 80px; 
+    top: 461px; 
+    position: absolute;
+  }
+  .userinfor
+  {
+    left: 88px; 
+    top: 31px; 
+    position: absolute; 
+    text-align: center; 
+    color: black; 
+    font-size: 20px;  
+    font-weight: 300; 
+    word-wrap: break-word;
+  }
+  .button-container {
+    position: absolute; 
+    right: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  .btn {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    font-size: 13px;
+    width: 120px;
+    height: 40px;
+    background: transparent;
+  }
+  .btn:hover {
+    background-color: black;
+    color: white;
+}
+  
+  .Password{
+    width: 1280px; 
+    height: 83px; 
+    left: 80px; 
+    top: 584px; 
+    position: absolute;
+  }
+
+ .SDT_User{
+    width: 1280px; 
+    height: 83px; 
+    left: 80px; 
+    top: 700px; 
+    position: absolute;
+ }
+ .email_User
+ {
+    width: 1280px; 
+    height: 83px; 
+    left: 80px; 
+    top: 820px; 
+    position: absolute;
+
+ }
+ .LGD{
+    width: 1280px; 
+    height: 83px; 
+    left: 80px; 
+    top: 940px; 
+    position: absolute;
+
+ }
+ .footer
+{
+    /* position: absolute; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal__body{
+    width: 1000px;
+    height: 400px;
+    background-color:white;
+    margin:  auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+.container {
+    width: 1000px;
+    height: 400px;
+    margin:  auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 35px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn1 {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    background: transparent;
+}
+
+.btn1:hover {
+    background-color: black;
+    color: white;
+}
+.input1 {
+    width: 48.5%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

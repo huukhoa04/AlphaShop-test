@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body>
+    <!-- #navbar-->
+    @await Html.PartialAsync("_LoggedinNavBar")
+    <div>
+        <div style = "min-height:400px;">
+            @RenderBody()
+        </div>
+    </div>
+        
+    <div class="footer">
+        <p>© 2024 Hỏa Tiễn 101</p>
+    </div>
+</body>
+
+</html>

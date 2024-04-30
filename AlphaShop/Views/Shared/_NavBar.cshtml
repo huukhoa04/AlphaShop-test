@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/guest_navbar.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>Home</title>
+</head>
+
+<header class="nav">
+    @{
+        var name = TempData["AccountName"] as AlphaShop.Data.Customer;
+    }
+        @* <div class="nav__bar--1">
+            <ul class="nav__flag--lang">
+                <button class="nav__flag" id = "nav__flag1"></button>
+                <button class="nav__flag" id = "nav__flag2"></button>
+                <button class="nav__flag" id = "nav__flag3"></button>
+            </ul>
+            <div class="nav__logo"></div>
+            <ul class="nav__acc">
+                <a asp-area="" asp-controller="GuestMenu" asp-action="Login"><button class="__main--btn" id = "nav__login">Đăng nhập</button></a>
+                <a asp-area="" asp-controller="GuestMenu" asp-action="Register"><button class="__main--btn" id = "nav__sign-up">Đăng kí</button></a>
+            </ul>
+        </div>
+        <div class="nav__bar--2">
+            <ul class="nav__list">
+                <a asp-area="" asp-controller="GuestMenu" asp-action="Index"><button class="nav__item">Trang chủ</button></a>
+                <a asp-area="" asp-controller="GuestMenu" asp-action="AboutUs"><button class="nav__item">Về chúng tôi</button></a>
+                <a asp-area="" asp-controller="GuestMenu" asp-action="Category"><button class="nav__item">Danh mục</button></a>
+                <a asp-area="" asp-controller="GuestMenu" asp-action="Recruit"><button class="nav__item">Tuyển dụng</button></a>
+                <a asp-area="" asp-controller="GuestMenu" asp-action="New"><button class="nav__item">Sản phẩm mới</button></a>
+                <a asp-area="" asp-controller="GuestMenu" asp-action="Place"><button class="nav__item">Chi nhánh</button></a>
+
+            </ul>
+        </div> *@
+    <div class="nav__bar--1">
+        <form class="nav__flag--lang">
+            <button class="nav__flag" id="nav__flag1"></button>
+            <button class="nav__flag" id="nav__flag2"></button>
+            <button class="nav__flag" id="nav__flag3"></button>
+        </form>
+        <div class="nav__logo"></div>
+        @{
+            if (name == null)
+            {
+                <form class="nav__acc">
+                    <button asp-action="Login" asp-controller="Log" class="__main--btn" id="nav__login">Đăng nhập</button>
+                    <button asp-action="Register" asp-controller="Log" class="__main--btn" id="nav__sign-up">Đăng kí</button>
+                </form>
+            }
+            else
+            {
+                <form class="nav__acc">
+                    <button asp-area="" asp-controller="Order" asp-action="Cart" class="cart_icon" id="cart_icon"></button>
+                    <a class="accountlink" asp-area="" asp-controller="UserInfo" asp-action="Index">Xin chào, Nguyễn Hữu Khoa</a>
+                    <button asp-action="Logout" asp-controller="Log" class="__main--btn">Đăng xuất</button>
+                </form>
+
+            }
+        }
+
+    </div>
+    <form class="nav__bar--2">
+        <ul class="nav__list">
+            <button asp-action="" asp-controller="" class="nav__item">Trang chủ</button>
+            <button asp-action="" asp-controller="" class="nav__item">Về chúng tôi</button>
+            <button asp-action="" asp-controller="" class="nav__item">Danh mục</button>
+            <button asp-action="" asp-controller="" class="nav__item">Tuyển dụng</button>
+            <button asp-action="" asp-controller="" class="nav__item">Sản phẩm mới</button>
+            <button asp-action="" asp-controller="" class="nav__item">Chi nhánh</button>
+        </ul>
+    </form>
+    </header>
+
+</html>

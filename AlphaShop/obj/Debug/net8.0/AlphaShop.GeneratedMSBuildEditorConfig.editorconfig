@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AlphaShop
+build_property.RootNamespace = AlphaShop
+build_property.ProjectDir = D:\Huukhoa\NAM 2\KI 2\C#\AlphaShop\AlphaShop\AlphaShop\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Huukhoa\NAM 2\KI 2\C#\AlphaShop\AlphaShop\AlphaShop
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Category/DrinkInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRHJpbmtJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Log/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Log/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Order/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/_LayoutGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRHdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/_LayoutLoggedin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dnZWRpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/_LoggedinNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dnZWRpbk5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/UserInfo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckluZm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Huukhoa/NAM 2/KI 2/C\#/AlphaShop/AlphaShop/AlphaShop/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-k0coouhb5s

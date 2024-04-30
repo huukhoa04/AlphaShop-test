@@ -1,0 +1,100 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/cartinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<div class="Cart" style = "margin-top : 30px;">
+    <div class="cartText">Giỏ hàng</div>
+    <img class="cartImg"src = "~/assets/img/cart/cart.png"/>
+    <ul class = "CartList" id = "CartList">
+        <li class="CartItem">
+            <div class="Itembox"></div>
+            <img class="ItemImg" src="~/assets/img/drinklist/image-holder2.png" />
+            <div class="ItemName">Kem ly dâu sữa</div>
+            <div class="Total" >25000$ x1 = 25000$</div>
+            <div class="Size">Size L</div>
+            <button class = "X"></button>
+        </li>
+
+        <li class="CartItem">
+            <div class="Itembox"></div>
+            <img class="ItemImg" src="~/assets/img/drinklist/image-holder2.png" />
+            <div class="ItemName">Kem ly dâu sữa</div>
+            <div class="Total" >25000$ x1 = 25000$</div>
+            <div class="Size">Size L</div>
+            <button class = "X"></button>
+        </li>
+
+        <li class="CartItem">
+            <div class="Itembox"></div>
+            <img class="ItemImg" src="~/assets/img/drinklist/image-holder2.png" />
+            <div class="ItemName">Kem ly dâu sữa</div>
+            <div class="Total" >25000$ x1 = 25000$</div>
+            <div class="Size">Size L</div>
+            <button class = "X"></button>
+        </li>
+
+        <li class="CartItem">
+            <div class="Itembox"></div>
+            <img class="ItemImg" src="~/assets/img/drinklist/image-holder2.png" />
+            <div class="ItemName">Kem ly dâu sữa</div>
+            <div class="Total" >25000$ x1 = 25000$</div>
+            <div class="Size">Size L</div>
+            <button class = "X"></button>
+        </li>
+
+        <li class="CartItem">
+            <div class="Itembox"></div>
+            <img class="ItemImg" src="~/assets/img/drinklist/image-holder2.png" />
+            <div class="ItemName">Kem ly dâu sữa</div>
+            <div class="Total" >25000$ x1 = 25000$</div>
+            <div class="Size">Size L</div>
+            <button class = "X"></button>
+        </li>
+
+        <li class="CartItem">
+            <div class="Itembox"></div>
+            <img class="ItemImg" src="~/assets/img/drinklist/image-holder2.png" />
+            <div class="ItemName">Kem ly dâu sữa</div>
+            <div class="Total" >25000$ x1 = 25000$</div>
+            <div class="Size">Size L</div>
+            <button class = "X"></button>
+        </li>
+
+        <li class="Line"></li>
+        <li class="OrderBox">
+            <div class="Rectbackground"></div>
+            <form><button asp-area="" asp-controller="Order" asp-action="Cart" class="Btn">Đặt hàng ngay</button></form>
+        </li>
+    </ul>
+
+    <script>
+    var drinkunits = document.querySelectorAll('#CartList .CartItem');
+    var unitsPerColumn = 100; // Số phần tử mỗi cột
+    var itemHeight = 265; // Chiều cao của mỗi phần tử CartItem
+    var topPosition = 30;
+    var currentColumn = 0;
+
+    for (var i = 0; i < drinkunits.length; i++) {
+        drinkunits[i].style.top = topPosition + 'px';
+
+        currentColumn++;
+        if (currentColumn === unitsPerColumn) {
+            topPosition += itemHeight;
+            currentColumn = 0;
+        }
+    }
+    var xButtons = document.querySelectorAll('.X');
+    xButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Xác định phần tử cha (li) của nút X được click
+            var liElement = this.parentNode;
+            // Xóa phần tử liElement khỏi DOM
+            liElement.remove();
+        });
+    });
+    </script>
+
+</div>

@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "JetBrains Mono";
+}
+
+body{
+    
+    background-color: white;
+    /* position: relative; */
+    /* temp */
+}
+/* navbar */
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 3px #000000;
+    z-index: 999;
+}
+.nav__bar--1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+}
+.nav__flag--lang
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav__flag{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 25px;
+}
+.nav__flag:hover{
+    opacity: 0.5;
+}
+#nav__flag1
+{
+
+    background-image: url("..\\img\\nav-bar\\vietnam.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag2
+{
+
+    background-image: url("..\\img\\nav-bar\\england.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag3
+{
+
+    background-image: url("..\\img\\nav-bar\\china.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+.nav__logo{
+    background-image: url("..\\img\\nav-bar\\Group1.png");
+    background-size: 100%;
+    margin-top: 5px;
+    width: 200px;
+    height: 69px;
+}
+.nav__acc
+{
+    margin-top: 20px;
+}
+.__main--btn
+{
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+
+}
+.__main--btn:hover
+{
+    background-color: black;
+    color: white;
+}
+.nav__bar--2
+{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+.nav__list
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav__item
+{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav__item:hover
+{
+    color: black;
+    background-color: white;
+
+}
+/* navbar */
+
+.DrinkImg
+{
+    width: 501px; 
+    height: 500px; 
+    left: 207px; 
+    top: 235px;  
+    position: absolute;
+    src:"assets\img\drinklist\image-holder.png";
+}
+
+.DescChoice
+{
+    width: 1029px; 
+    height: 1449px; 
+    left: 209px; 
+    top: 271px; 
+    position: absolute;
+}
+
+.DrinkName
+{
+    width: 320px; 
+    height: 50px; 
+    left: 529px; 
+    top: 0px; 
+    position: absolute; 
+    color: black; 
+    font-size: 40px; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.Size, .Loai, .Ghichu {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.Size {
+    width: 70px;
+    height: 25px;
+    left: 529px;
+    top: 78px;
+}
+
+.Loai {
+    width: 70px;
+    height: 25px;
+    left: 528px;
+    top: 133px;
+}
+
+.Ghichu {
+    left: 528px;
+    top: 188px;
+    white-space: pre-line;
+}
+
+
+.option_btn
+{
+    border-radius: 10px;
+    font-size: 12px;
+    position: absolute;
+    background: transparent;
+
+}
+
+.size_box
+{
+    width: 45px; 
+    height: 30px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: transparent; 
+    border-radius: 10px; 
+    border: 2px rgba(0, 0, 0, 0.77) solid;
+    font-size: 15px; 
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.loai_box
+{
+    width: 183px; 
+    height: 30px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: transparent; 
+    border-radius: 10px; 
+    border: 2px rgba(0, 0, 0, 0.77) solid;
+    font-size: 15px; 
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.login_box
+{
+    width: 289px; 
+    height: 46px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: transparent; 
+    border-radius: 10px; 
+    border: 2px rgba(0, 0, 0, 0.77) solid;
+    font-size: 15px; 
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.ghichu_box
+{
+    width: 468px; 
+    height: 134px; 
+    left: 524px; 
+    top: 223px; 
+    position: absolute; 
+    background: white; 
+    border: 2px black solid;
+    
+}
+
+.order_box
+{
+    width: 163px; 
+    height: 46px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: black; 
+    border-radius: 10px; 
+    border: 2px white solid;
+    color: white;
+    font-size: 15px; 
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+
+.inputGhichu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    color: #685E5E;
+    padding: 10px;
+    box-sizing: border-box; 
+    background: transparent; 
+}
+
+.option_btn:hover .size_box, .option_btn:hover .loai_box {
+    background-color: black;
+    color:white;
+}
+
+.option_btn:hover .size_box.hovered, .option_btn:hover .loai_box.hovered {
+    background-color: black;
+    color: white;
+}
+
+.option_btn:hover .order_box {
+    background-color: green;
+    color: black;
+}
+
+.selected {
+    /* CSS khi được chọn */
+}
+
+
+.review-list {
+    position: relative; 
+    width: 100%;
+    top: 900px;
+}
+
+.Component
+{
+    width: 775px; 
+    height: 116px;
+    position: absolute;
+    left: 143px; 
+}
+
+.Component:nth-child(1) {
+    top: 0;
+}
+
+.Component:nth-child(2) {
+    top: 200px; 
+}
+
+.Component:nth-child(3) {
+    top: 400px; 
+}
+
+.Component:nth-child(4) {
+    top: 600px;
+}
+
+
+.Comment
+{
+    width: 709px; 
+    height: 116px; 
+    left: 66px; 
+    top: 0px;
+    position: absolute"
+}
+
+.ratings
+{
+    top: 47px; 
+    left : 40px;
+    position: relative;
+}
+
+.Star1
+{
+    left : 0;
+}
+
+.Star2
+{
+    left : 26;
+}
+
+.Star3
+{
+    left : 52;
+}
+
+.Star4
+{
+    left : 78;
+}
+
+.Star5
+{
+    left : 104;
+}
+
+.Ellipse5
+{
+    width: 60px; 
+    height: 60px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    border-radius: 9999px; 
+    border: 2px black solid;
+}
+
+.Legiahan617
+{
+    left: 84px; top: 4px; 
+    position: absolute; 
+    text-align: center; 
+    color: black; 
+    font-size: 20px; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.reviewtext
+{
+    left: 85px; 
+    top: 90px; 
+    position: absolute; 
+    text-align: center; 
+    color: black; 
+    font-size: 20px;  
+    font-weight: 200; 
+    word-wrap: break-word;
+}

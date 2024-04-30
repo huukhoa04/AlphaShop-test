@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "JetBrains Mono";
+}
+
+body{
+    
+    background-color: white;
+    /* position: relative; */
+    /* temp */
+}
+/* navbar */
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 3px #000000;
+    z-index: 999;
+}
+.nav__bar--1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+}
+.nav__flag--lang
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav__flag{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 25px;
+}
+.nav__flag:hover{
+    opacity: 0.5;
+}
+#nav__flag1
+{
+
+    background-image: url("..\\img\\nav-bar\\vietnam.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag2
+{
+
+    background-image: url("..\\img\\nav-bar\\england.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+#nav__flag3
+{
+
+    background-image: url("..\\img\\nav-bar\\china.png");
+    background-size: 105%;
+    background-position: -1px;
+    /* background: transparent; */
+    border: none;
+}
+.nav__logo{
+    background-image: url("..\\img\\nav-bar\\Group1.png");
+    background-size: 100%;
+    margin-top: 5px;
+    width: 200px;
+    height: 69px;
+}
+.nav__acc
+{
+    margin-top: 20px;
+}
+.__main--btn
+{
+    border-radius: 10px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+
+}
+.__main--btn:hover
+{
+    background-color: black;
+    color: white;
+}
+.nav__bar--2
+{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+.nav__list
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav__item {
+    margin-top: 10px;
+    padding: 5px;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    background: black;
+}
+
+.nav__item:hover {
+    color: black;
+    background: white;
+}
+
+/* navbar */
+.bg--1{
+    position: relative;
+
+}
+.bg--1 img{
+
+    
+    /* background-size: 100%; */
+    width: 100%;
+}
+.bg__move--btn
+{
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    /* z-index: 10; */
+    /* margin-top: -200px; */
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.bg__move--btn:hover
+{
+    opacity: 0.5;
+}
+#bg__btn--left
+{
+    background-image: url("..\\img\\background\\ArrowButton.png");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    
+    left: 2%;
+    
+}
+#bg__btn--right
+{
+    background-image: url("..\\img\\background\\reversedArrowButton.png");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 2%;
+}
+.content__1
+{
+    display: flex;
+    /* margin: 100px auto auto 100px; */
+    margin-top: 100px;
+    margin-left: 400px;
+}
+.content__img
+{
+    box-shadow: 5px 5px 5px #6c6a6a;
+    border-radius: 5px;
+}
+.content__1--1{
+    display: flex;
+    flex-direction: column;
+}
+.content__para 
+{
+    padding: 30px;
+    background-color: #FEFFC8;
+    box-shadow: 15px 15px 15px #F5DF91;
+    width: 550px;
+    height: 250px;
+}
+.content__1--para
+{
+    margin-top: 80px;
+    margin-left: 50px;
+    
+    /* padding: 20px auto 20px auto; */
+}
+.content__1--para h2
+{
+    margin-bottom: 20px;
+}
+.__main--btn--2
+{
+    
+    width: 200px;
+    height: 50px;
+    background-color: #FEFFC8;
+    background-blend-mode: color;
+    box-shadow: 15px 15px 15px #F5DF91;
+    border: none;
+    
+}
+.__main--btn--2:hover
+{
+    transform: scale(1.1);
+}
+.content__1--btn
+{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.content__2
+{
+    display: flex;
+    /* margin: 100px auto auto 100px; */
+    margin-top: 300px;
+    margin-left: 400px;
+}
+.content__2--1
+{
+    display: flex;
+    flex-direction: column;
+}
+.content__2--para
+{
+    margin-top: 80px;
+    /* margin-left: 50px; */
+}
+.content__2--para h2
+{
+    margin-bottom: 20px;
+}
+.content__2--btn
+{
+    margin-top: 50px;
+    margin-left: 350px;
+}
+.content__2 .content__img
+{
+    margin-left: 50px;
+}
+.bg--2
+{
+    margin-top: 200px;
+    background-image: url("..\\img\\content\\bg__2.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: 50%;
+}
+.bg--2 h1
+{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 100px;
+    font-weight: 12px;
+}
+.__main--btn--3
+{
+    border: none;
+    background-color: black;
+    color: white;
+    width: 185px;
+    height: 40px;
+    margin-left: 45%;
+    margin-top: 20px;
+    
+}
+.__main--btn--3:hover
+{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+/* CSS cho footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Màu nền cho footer */
+    padding: 20px; /* Padding cho footer */
+    text-align: center; /* Căn giữa nội dung trong footer */
+    font-family: 'JetBrains Mono', monospace; /* Font chữ cho footer */
+    z-index: 999; /* Đảm bảo footer hiển thị trên tất cả các phần tử khác */
+}
+

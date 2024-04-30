@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "JetBrains Mono";
+}
+body {
+    background-color: #F5DF91;
+}
+
+.container {
+    width: 800px;
+    margin: 150px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    text-align: center;
+}
+
+.logo{
+    background-image: url("..\\img\\nav-bar\\Group1.png");
+    background-size: 100%;
+    width: 200px;
+    height: 69px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 40px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* label {
+    display: block;
+    margin-bottom: 5px;
+} */
+
+.input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+.list__item-link {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #007bff;
+  }
+.radio__input-group
+{
+    display : flex;
+    margin-bottom: 20px;
+}
+.gender__container-main
+{
+    display : flex;
+    margin-left: 50px;
+}
+.gender__container
+{
+    margin-left: 30px;
+}
+.date__input-group
+{
+    display : flex;
+    margin-bottom: 20px;
+}
+.date__input
+{
+    margin-left: 85px;
+}

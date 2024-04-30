@@ -1,0 +1,148 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/userpage.css">
+    <script src="~/assets/js/script.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<div class="Userpage">
+        <div class="Uinfor" >Thông tin người dùng</div>
+        <img class="logo" src="~/assets/img/user/lmao.png"/>
+        <div class="User">
+            <div class="Rec">
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+              <div class="userinfor">Nguyễn Hữu Khoa</div>
+            </div>
+        </div>
+
+        <div class="Password">
+            <div class="Rec">
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+              <div class="userinfor">*************</div>
+              <div class="button-container">
+                <button class="btn" id="btncp">Đổi mật khẩu</button>
+              </div>
+            </div>
+        </div>
+        
+        <div class="SDT_User">
+            <div class="Rec">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+              <div class="userinfor">0338140272</div>
+              <div class="button-container">
+                <button class="btn" id="btncs">Đổi SDT</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="email_User">
+            <div class="Rec">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+              <div class="userinfor">huukhoa04@gmail.com</div>
+              <div class="button-container">
+                <button class="btn" id="btnce">Đổi email</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="LGD">
+            <div class="Rec">
+                <div class="icon">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+              <div class="userinfor">Lịch sử giao dịch</div>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <div class="container">
+                    <div class="login-box">
+                        <h2>Đổi mật khẩu</h2>
+                        <div class="input-group">
+                            <label for="old_pass">Mật khẩu cũ </label>
+                            <input type="password" class="input" name="old_password" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="new_pass">Mật khẩu mới</label>
+                            <input type="password" class="input" name="new_password" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="new_pass1">Xác nhận mật khẩu mới</label>
+                            <input type="password" class="input" name="new_password" required>
+                        </div>
+                        <button class="btn1" >Đồng ý</button>
+                        <button class="btn1" id="ev">Hủy</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <div class="container">
+                    <div class="login-box">
+                        <h2>Đổi số điện thoại</h2>
+                        <div class="input-group">
+                            <label for="new_SDT">Nhập số điện thoại mới</label>
+                            <input type="text" class="input" name="new" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="new_pass1">Mã xác nhận</label>
+                            <input type="text" class="input1" name="new" required>
+                            <button class="btn1" >Gửi mã</button>
+                        </div>
+                        <button class="btn1" >Đồng ý</button>
+                        <button class="btn1" id="ev1">Hủy</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <div class="container">
+                    <div class="login-box">
+                        <h2>Đổi email</h2>
+                        <div class="input-group">
+                            <label for="new_email">Nhập email mới</label>
+                            <input type="text" class="input" name="new" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="new_pass1">Mã xác nhận</label>
+                            <input type="text" class="input1" name="new" required>
+                            <button class="btn1" >Gửi mã</button>
+                        </div>
+                        <button class="btn1" >Đồng ý</button>
+                        <button class="btn1" id="ev2">Hủy</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
